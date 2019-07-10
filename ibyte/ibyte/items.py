@@ -16,6 +16,5 @@ class IbyteItem(scrapy.Item):
     preco = scrapy.Field()
     preco_antigo = scrapy.Field()
     descricao = scrapy.Field()
-    imagens = scrapy.Field
     caracteristicas = scrapy.Field()
     garantia = scrapy.Field()

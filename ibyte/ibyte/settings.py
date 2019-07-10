@@ -14,6 +14,13 @@ BOT_NAME = 'ibyte'
 SPIDER_MODULES = ['ibyte.spiders']
 NEWSPIDER_MODULE = 'ibyte.spiders'
 
+#MongoDB Settings
+# ITEM_PIPELINES = ['stack.pipelines.MongoDBPipeline', ]
+
+MONGODB_SERVER = "localhost"
+MONGODB_PORT = 27017
+MONGODB_DB = "ibytedb"
+MONGODB_COLLECTION = "produtos"
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'ibyte (+http://www.yourdomain.com)'
@@ -64,9 +71,9 @@ ROBOTSTXT_OBEY = False
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'ibyte.pipelines.IbytePipeline': 300,
-#}
+ITEM_PIPELINES = {
+   'ibyte.pipelines.IbytePipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
