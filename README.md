@@ -23,8 +23,7 @@
 * garantia
 
 #### Setup do ambiente
-* pip install scrapy
-* pip install pymongo
+* pip install -r requirements.txt
 
 #### Comandos usados 
 * scrapy startproject nome_projeto (para criação do projeto)
@@ -32,8 +31,8 @@
 
 #### Instruções para execução
 * Instalar [MongoDB](https://www.mongodb.com/)
-* Criar um diretório data/db na raiz do disco (Ex. C:)
-* Iniciar o servidor com o mongod.exe
+* Criar um diretório data/db na raiz do disco (Windows)
+* Iniciar o servidor com o mongod.exe (Windows) ou executar o comando mongod (Linux)
 * Seguir para o diretório ibyte/ no terminal do ambiente
 * Usar o comando scrapy crawl ibytebot -a pesquisa="palavra" (palavra é o parâmetro para efetuar a pesquisa. Ex. "fone de ouvido")
 
@@ -54,7 +53,7 @@
     
 #### Opcionais:
 * Manipulação de querystrings - Não se mostrou necessário na aplicação
-* Utilização de item loaders para carregar informações - Um estudo mais amplo é necessário para aplicação nesse caso
+* Utilização de item loaders para carregar informações - Um estudo mais amplo de scrapy.Loaders é necessário para aplicação nesse caso
 * Chamadas assíncronas para capturar informações não presentes no HTML (AJAX, etc.) - Não necessário nessa aplicação
 
 #### Tempo utilizado:
