@@ -32,7 +32,7 @@
 #### Instruções para execução
 * Instalar [MongoDB](https://www.mongodb.com/)
 * Criar um diretório data/db na raiz do disco (Windows)
-* Iniciar o servidor com o mongod.exe (Windows) ou executar o comando mongod (Linux)
+* Iniciar o servidor com o mongod.exe (Windows) ou executar o serviço mongod (Linux)
 * Seguir para o diretório ibyte/ no terminal do ambiente
 * Usar o comando scrapy crawl ibytebot -a pesquisa="palavra" (palavra é o parâmetro para efetuar a pesquisa. Ex. "fone de ouvido")
 
